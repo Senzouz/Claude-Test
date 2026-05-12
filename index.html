@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARDOR — Cocina de Fuego Vivo</title>
+  <meta name="description" content="Restaurante de alta cocina con fuego vivo. Reserva tu experiencia gastronómica única." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-text">ARDOR</span>
+      <span class="nav__logo-sub">COCINA DE FUEGO VIVO</span>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">Historia</a></li>
+      <li><a href="#menu" class="nav__link">Menú</a></li>
+      <li><a href="#experience" class="nav__link">Experiencia</a></li>
+      <li><a href="#testimonials" class="nav__link">Reseñas</a></li>
+      <li><a href="#reserve" class="nav__link nav__link--cta">Reservar Mesa</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=85"
+        alt="Interior del restaurante Ardor"
+        class="hero__img"
+        id="heroImg"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">— Alta Cocina de Autor —</p>
+      <h1 class="hero__title reveal">
+        Donde el fuego<br />
+        <em>transforma</em><br />
+        el sabor
+      </h1>
+      <p class="hero__desc reveal">
+        Ingredientes de temporada, técnica de fuego vivo y una obsesión por los sabores que no olvidas.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#reserve" class="btn btn--gold">Reservar Mesa</a>
+        <a href="#menu" class="btn btn--ghost">Ver Menú</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" id="scrollHint">
+      <span>Descubrir</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- AWARDS STRIP -->
+  <div class="awards">
+    <div class="awards__inner">
+      <div class="awards__item">
+        <span class="awards__icon">★</span>
+        <span class="awards__text">Mejor Restaurante 2024 · Guía Michelin</span>
+      </div>
+      <div class="awards__sep">·</div>
+      <div class="awards__item">
+        <span class="awards__icon">◆</span>
+        <span class="awards__text">Top 50 Latinoamérica · Restaurant Magazine</span>
+      </div>
+      <div class="awards__sep">·</div>
+      <div class="awards__item">
+        <span class="awards__icon">★</span>
+        <span class="awards__text">Chef del Año · Academia Gastronómica</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__media reveal-left">
+      <img
+        src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&q=85"
+        alt="Chef Marco Villanueva"
+        class="about__img about__img--main"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=85"
+        alt="Detalle de platillo"
+        class="about__img about__img--accent"
+      />
+      <div class="about__badge">
+        <span class="about__badge-num">18</span>
+        <span class="about__badge-label">años de pasión</span>
+      </div>
+    </div>
+    <div class="about__text reveal-right">
+      <p class="section-eyebrow">Nuestra Historia</p>
+      <h2 class="section-title">El fuego como filosofía</h2>
+      <p class="about__body">
+        Marco Villanueva creció entre brasas y cazuelas en el Valle de Elqui. A los 22 años voló a Madrid, luego a Tokio, luego a Lima. Regresó con una convicción: <em>el fuego honesto no miente.</em>
+      </p>
+      <p class="about__body">
+        En ARDOR cocinamos sobre leña de roble y quebracho. No usamos gas. No usamos microondas. Cada platillo lleva el tiempo que necesita, nada más, nada menos.
+      </p>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__num">14</span>
+          <span class="stat__label">productores locales</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">30</span>
+          <span class="stat__label">platos de autor</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">4k+</span>
+          <span class="stat__label">mesas felices</span>
+        </div>
+      </div>
+      <a href="#reserve" class="btn btn--gold">Conocer al Chef</a>
+    </div>
+  </section>
+
+  <!-- MENU HIGHLIGHT -->
+  <section class="menu" id="menu">
+    <div class="menu__header">
+      <p class="section-eyebrow reveal">Lo que nos define</p>
+      <h2 class="section-title reveal">Platillos de temporada</h2>
+      <p class="menu__sub reveal">
+        El menú cambia con las estaciones. Estos son los favoritos del momento.
+      </p>
+    </div>
+    <div class="menu__grid">
+
+      <article class="dish reveal">
+        <div class="dish__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=85"
+            alt="Costilla de res al carbón"
+            class="dish__img"
+          />
+          <div class="dish__overlay">
+            <p class="dish__overlay-text">Maduración 45 días · Brasa de quebracho</p>
+          </div>
+        </div>
+        <div class="dish__info">
+          <div class="dish__meta">
+            <span class="dish__tag">Signature</span>
+            <span class="dish__price">$62</span>
+          </div>
+          <h3 class="dish__name">Costilla Black Angus</h3>
+          <p class="dish__desc">45 días de maduración en seco, brasa lenta de quebracho, chimichurri de hierbas frescas y papa violeta confitada.</p>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=85"
+            alt="Pulpo a la brasa"
+            class="dish__img"
+          />
+          <div class="dish__overlay">
+            <p class="dish__overlay-text">Atlántico · Brasa de roble</p>
+          </div>
+        </div>
+        <div class="dish__info">
+          <div class="dish__meta">
+            <span class="dish__tag">Mar</span>
+            <span class="dish__price">$48</span>
+          </div>
+          <h3 class="dish__name">Pulpo a la Brasa</h3>
+          <p class="dish__desc">Pulpo del Atlántico, brasa de roble, emulsión de pimentón ahumado, crocante de garbanzos y aceite verde de cilantro.</p>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=700&q=85"
+            alt="Pasta de autor"
+            class="dish__img"
+          />
+          <div class="dish__overlay">
+            <p class="dish__overlay-text">Pasta artesanal · Trufa negra</p>
+          </div>
+        </div>
+        <div class="dish__info">
+          <div class="dish__meta">
+            <span class="dish__tag">Pasta</span>
+            <span class="dish__price">$38</span>
+          </div>
+          <h3 class="dish__name">Tagliatelle de Trufa</h3>
+          <p class="dish__desc">Pasta fresca amasada a mano, mantequilla tostada, trufa negra de temporada, parmigiano reggiano 36 meses y yema curada.</p>
+        </div>
+      </article>
+
+      <article class="dish reveal">
+        <div class="dish__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=85"
+            alt="Cóctel de autor"
+            class="dish__img"
+          />
+          <div class="dish__overlay">
+            <p class="dish__overlay-text">Mixología · Destilados de autor</p>
+          </div>
+        </div>
+        <div class="dish__info">
+          <div class="dish__meta">
+            <span class="dish__tag">Barra</span>
+            <span class="dish__price">$18</span>
+          </div>
+          <h3 class="dish__name">Ember Negroni</h3>
+          <p class="dish__desc">Gin ahumado en barrica, Campari de temporada, vermouth rojo artesanal y una piel de naranja flameada ante sus ojos.</p>
+        </div>
+      </article>
+
+    </div>
+    <div class="menu__cta reveal">
+      <p>¿Quieres explorar la carta completa?</p>
+      <a href="#reserve" class="btn btn--outline">Ver Menú Completo</a>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / PARALLAX -->
+  <section class="experience" id="experience">
+    <div class="experience__parallax" id="parallax">
+      <img
+        src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?auto=format&fit=crop&w=1920&q=85"
+        alt="Brasa encendida"
+        class="experience__img"
+        id="parallaxImg"
+      />
+      <div class="experience__overlay"></div>
+    </div>
+    <div class="experience__content">
+      <p class="section-eyebrow reveal">La Experiencia ARDOR</p>
+      <h2 class="experience__title reveal">
+        No es solo una cena.<br />
+        <em>Es un momento que recuerdas.</em>
+      </h2>
+      <div class="experience__pillars">
+        <div class="pillar reveal">
+          <div class="pillar__icon">🔥</div>
+          <h3 class="pillar__title">Fuego Vivo</h3>
+          <p class="pillar__text">Solo leña de roble y quebracho. El humo es ingrediente.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar__icon">🌿</div>
+          <h3 class="pillar__title">Km 0</h3>
+          <p class="pillar__text">El 90% de nuestros ingredientes viene de productores a menos de 200 km.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar__icon">🍷</div>
+          <h3 class="pillar__title">Sommelier</h3>
+          <p class="pillar__text">Maridaje personalizado para cada experiencia y presupuesto.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar__icon">✦</div>
+          <h3 class="pillar__title">Privado</h3>
+          <p class="pillar__text">Salón privado para grupos de 8 a 20 personas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY STRIP -->
+  <section class="gallery">
+    <div class="gallery__track" id="galleryTrack">
+      <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=500&h=500&q=80" alt="Platillo 1" class="gallery__img" />
+      <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=500&h=500&q=80" alt="Platillo 2" class="gallery__img" />
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&h=500&q=80" alt="Carne a la brasa" class="gallery__img" />
+      <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=500&h=500&q=80" alt="Platillo 4" class="gallery__img" />
+      <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=500&h=500&q=80" alt="Desayuno" class="gallery__img" />
+      <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&h=500&q=80" alt="Pasta" class="gallery__img" />
+      <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=500&h=500&q=80" alt="Platillo 1 dup" class="gallery__img" />
+      <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=500&h=500&q=80" alt="Platillo 2 dup" class="gallery__img" />
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__header">
+      <p class="section-eyebrow reveal">Lo que dicen</p>
+      <h2 class="section-title reveal">Voces que nos inspiran</h2>
+    </div>
+    <div class="testimonials__grid">
+
+      <blockquote class="testi reveal">
+        <div class="testi__stars">★★★★★</div>
+        <p class="testi__body">
+          "La costilla Black Angus fue la mejor pieza de carne que he probado en mi vida. El servicio, impecable. Ya reservamos para el mes que viene."
+        </p>
+        <footer class="testi__footer">
+          <img src="https://i.pravatar.cc/60?img=1" alt="Ana Rivas" class="testi__avatar" />
+          <div>
+            <strong>Ana Rivas</strong>
+            <span>Food blogger · @anarivas.food</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testi testi--featured reveal">
+        <div class="testi__stars">★★★★★</div>
+        <p class="testi__body">
+          "No exagero cuando digo que ARDOR cambió mi concepto de alta cocina. El fuego vivo en cada platillo no es un truco, es una filosofía. Marco Villanueva es un genio."
+        </p>
+        <footer class="testi__footer">
+          <img src="https://i.pravatar.cc/60?img=11" alt="Carlos Ibáñez" class="testi__avatar" />
+          <div>
+            <strong>Carlos Ibáñez</strong>
+            <span>Crítico gastronómico · El Mercurio</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testi reveal">
+        <div class="testi__stars">★★★★★</div>
+        <p class="testi__body">
+          "Vinimos por el aniversario y fue mágico. El salón privado, el maridaje, los postres… todo perfecto. Lo recomiendo con los ojos cerrados."
+        </p>
+        <footer class="testi__footer">
+          <img src="https://i.pravatar.cc/60?img=5" alt="Valentina Morales" class="testi__avatar" />
+          <div>
+            <strong>Valentina Morales</strong>
+            <span>Google Reviews · 5 estrellas</span>
+          </div>
+        </footer>
+      </blockquote>
+
+    </div>
+  </section>
+
+  <!-- RESERVE -->
+  <section class="reserve" id="reserve">
+    <div class="reserve__deco"></div>
+    <div class="reserve__content">
+      <div class="reserve__info reveal-left">
+        <p class="section-eyebrow">¿Listo para vivir ARDOR?</p>
+        <h2 class="section-title">Reserva tu mesa</h2>
+        <p class="reserve__body">
+          Abrimos de martes a domingo. Para grupos de más de 6 personas escríbenos directamente.
+        </p>
+        <ul class="reserve__hours">
+          <li><span>Martes – Jueves</span><span>19:00 – 23:30</span></li>
+          <li><span>Viernes – Sábado</span><span>13:00 – 15:30 · 19:00 – 00:00</span></li>
+          <li><span>Domingo</span><span>13:00 – 16:00</span></li>
+        </ul>
+        <div class="reserve__contact">
+          <a href="tel:+56212345678" class="reserve__contact-link">+56 2 1234 5678</a>
+          <a href="mailto:hola@ardor.cl" class="reserve__contact-link">hola@ardor.cl</a>
+        </div>
+      </div>
+      <form class="reserve__form reveal-right" id="reserveForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Juan García" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Hora</label>
+            <select id="time" name="time" required>
+              <option value="">Seleccionar</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="guests">N° de personas</label>
+          <div class="guests-control">
+            <button type="button" class="guests-btn" id="guestsDown">−</button>
+            <span id="guestsVal">2</span>
+            <button type="button" class="guests-btn" id="guestsUp">+</button>
+          </div>
+          <input type="hidden" id="guests" name="guests" value="2" />
+        </div>
+        <div class="form-group">
+          <label for="notes">Ocasión especial o alergias</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Cumpleaños, aniversario, celiaquía..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold btn--full" id="submitBtn">
+          Confirmar Reserva
+        </button>
+        <p class="form__note">Recibirás confirmación por correo en menos de 2 horas.</p>
+        <div class="form__success" id="formSuccess">
+          <span class="form__success-icon">✓</span>
+          <p>¡Reserva recibida! Te confirmamos pronto.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location">
+    <div class="location__map-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=80"
+        alt="Ciudad"
+        class="location__map-bg"
+      />
+      <div class="location__map-overlay"></div>
+      <div class="location__card reveal">
+        <h3>¿Dónde encontrarnos?</h3>
+        <p>Av. Isidora Goyenechea 3000<br />Las Condes, Santiago</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn--gold">Ver en Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">ARDOR</span>
+        <p class="footer__tagline">Cocina de Fuego Vivo</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram" class="footer__social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="footer__social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="footer__social-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.05a8.27 8.27 0 0 0 4.84 1.55V7.16a4.85 4.85 0 0 1-1.07-.47z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Restaurante</h4>
+        <ul>
+          <li><a href="#about">Nuestra Historia</a></li>
+          <li><a href="#menu">El Menú</a></li>
+          <li><a href="#experience">La Experiencia</a></li>
+          <li><a href="#reserve">Reservas</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Más</h4>
+        <ul>
+          <li><a href="#">Eventos Privados</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="footer__newsletter">
+        <h4>Novedades y Eventos</h4>
+        <p>Sé el primero en conocer menús especiales y eventos.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="tu@correo.com" required />
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 ARDOR Restaurante. Todos los derechos reservados.</p>
+      <p>Diseñado con fuego y pasión.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
